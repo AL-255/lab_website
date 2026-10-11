@@ -62,6 +62,6 @@ assert(homeNews.includes("Latest from the Lab"), "Missing homepage news heading"
 assert(homeNews.includes('href="/news"'), "Missing full news archive link")
 const homeNewsLinks = [...homeNews.matchAll(/href="(\/news\/[^"#?]+)"/g)].map(match => match[1])
 const latestNewsLinks = [...items].sort((a, b) => new Date(b.date) - new Date(a.date))
-  .slice(0, 4).map(item => `/news/${item.slug}`)
-assert.deepEqual(homeNewsLinks, latestNewsLinks, "Homepage must show exactly the four latest news items in order")
+  .slice(0, 6).map(item => `/news/${item.slug}`)
+assert.deepEqual(homeNewsLinks, latestNewsLinks, "Homepage must show exactly the six latest news items in order")
 console.log(`Verified ${items.length} news pages: ${mappedBodies.size} articles, ${items.filter((item) => !item.body).length} short announcements; bodies, links, galleries, homepage, sitemap, and no orphan articles.`)

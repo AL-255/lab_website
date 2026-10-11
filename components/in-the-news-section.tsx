@@ -10,7 +10,7 @@ export function InTheNewsSection({ content }: InTheNewsSectionProps) {
   const { data } = content
   const recentItems = [...data.items]
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-    .slice(0, 4)
+    .slice(0, 6)
 
   return (
     <section id="in-the-news" className="pt-16 pb-16">

@@ -6,7 +6,7 @@ Preserve the distinction between an invitation or scheduled event and a confirme
 
 Use a single exclamation mark for celebrations, welcomes, congratulations, and personal thanks. Keep technical descriptions and informational talk or publication headlines neutral; avoid repeated exclamation marks.
 
-The homepage shows the four most recent entries under “Latest from the Lab,” with an “All news” link to the complete archive. Keep technical details in summaries and specific acknowledgments in articles rather than crowding headlines.
+The homepage shows the six most recent entries under “Latest from the Lab,” with an “All news” link to the complete archive. Keep technical details in summaries and specific acknowledgments in articles rather than crowding headlines.
 
 Each entry in `news.yaml` has a permanent `slug`. Keep it unchanged when editing the title: homepage links, news links, detail pages, and the sitemap all use this value. The existing public URLs have been preserved, including their long identifiers.
 
